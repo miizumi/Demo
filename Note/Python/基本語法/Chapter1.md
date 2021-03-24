@@ -26,6 +26,10 @@
    <br/>月費約300元可以享有Nvidia P100的運算效能。
    <br/>如果需要做人工智慧的運算，推薦使用Nvidia的顯示卡，會使用GPU做運算。
    <br/>效能可以GOOGLE 「CUDA數」作為參考指標。
+   <br/>方便分享程式碼，檔案會存在GoogleDrive
+   <br/>會有SelctionTimeout的問題，長時間閒置會斷線。
+
+
 4. ### Anaconda
    老師較不推薦新手使用，除錯較不容易，而且使用虛擬環境執行。
 
