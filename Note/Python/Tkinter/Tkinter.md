@@ -86,6 +86,6 @@ win.mainloop()
 
     #
     label1.place(x=100,y=50) #指定座標位置。
-    lablel1.grid()  #按照行/列形式排序元件。
+    lable1.grid()  #按照行/列形式排序元件。
     #註：不要在同一個父元件底下混合使用grid跟pack。
 ```
