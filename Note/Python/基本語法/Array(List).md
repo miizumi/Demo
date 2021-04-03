@@ -4,10 +4,19 @@ python的陣列主要分三種
 2. 二維
 3. 多維
 <br/>***馬的廢話***
+
+### 基本認知
+ + 矩陣內不要混和不同的資料型態，不好看且容易有問題。
+ + list2=list1 
+      <br/>會將list2導向list1的記憶體位置，若list2有更動，會影響list1。
+      <br/>正確方式：list2=list1.copy
+
 ```python
 animals=['Dog','Cat','Frog']    #基本的一維陣列
 
 print(animals[0])            #叫用方式 # print:Dog
+
+print(animals[-1])            #會取得最後的值 #print：Frog
 
 num=animals.index['Cat']     #尋找值的位置，以最先遇到為主 # num=1
 
@@ -22,6 +31,41 @@ room=[['1F-1','1F-2','1F-3'],#二維陣列寫法，多維依此列推。
       ['3F-1','3F-2','3F-3']]
 
 print(room[1][2])            #多維的叫用方式，如果有更多就繼續接下去 # print:2F-2
+```
+
+將LIST轉型成String，可以使所有內容連接起來。
+```python
+    list=[a,b,c,d,e]
+    newList=str(list)[1,-1] #把頭尾去掉，才不會出現中括號[]
+    print(newList)  #print：abcde
+```
+
+## 較為特別的應用方式
+```python
+list=[3,1]
+
+```
+
+## SORT 排序
+
+### 字串前方有數字1~10以上
+因為如果有1~10以上字串排序，會形成尷尬的排列結果。<br/>
+例如：<br/>
++  排列前=[1,2,3,4,5,6,7,8,9,10]
++  排列後=[1,10,2,3,4,5,6,7,8,9]
+
+<br/>可以使用split切成LIST，再將切出的數字做排序。
+
+借用黏巴達的方式排序。(不需要引用)
+```python
+    #數字在開頭
+    #a:
+    list.sort(key = lambda x:int(x.split(a)[0]))
+
+    #如果數字夾在字源中間
+    list.sort(key = lambda x:int(x.split(a)[0].split(b)[1]))
+    #b:數字的前一個字元
+    #a:數字的後一個字元    
 ```
 
 ## 題外話
@@ -52,3 +96,4 @@ d=range(start=0,stop=6,step=2)      #d=[0,2,4]
 
 print(list(a)) #產生的陣列跟LIST一樣，但變數指標不同，若要以LIST顯示仍要轉型。
 ```
+
