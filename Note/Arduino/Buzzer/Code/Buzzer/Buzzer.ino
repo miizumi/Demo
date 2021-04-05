@@ -7,11 +7,9 @@ void setup() {
 }
 
 void loop() {
-  //給予高電位。
+  //給予高電位，使有源蜂鳴器出聲
   digitalWrite(PIN,HIGH);
   delay (1000); 
-
-  //熄燈
   digitalWrite (PIN, LOW); 
   delay (2000); 
 
