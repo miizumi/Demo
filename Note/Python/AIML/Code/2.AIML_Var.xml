@@ -1,0 +1,32 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!--變數應用-->
+    <category>
+      <pattern>請問有 * 嗎</pattern><!--星號(*)代表變數，輸入：請問有 麵包 嗎，會紀錄「麵包」這個字串。-->
+      <template>    <!--叫用字串則需要用 star/ 標籤，則會得到剛剛的字串-->
+         你要的<star/>，目前還有喔。
+      </template>
+    </category>
+
+
+    <category>
+      <pattern>請給我 * 份 *</pattern> <!--  一個星號(*)代表一個變數，輸入：請給我 1 份 草莓蛋糕，則此句會得到「1」跟「草莓蛋糕」兩個變數。-->
+      <template>
+          <!--當有超過兩個以上的星號(*)，則需要加入 index="x" 關鍵字，代表第x個星號。-->
+         你要  <star index = "1"/>  份  <star index = "2"/>。   <!--你要 1 份 三明治。-->
+      </template>
+    </category>
+
+    <category>
+      <pattern>請給我 * 個 *</pattern>  <!--請給我 3 個 漢堡-->
+      <template>    <!--用一對set標籤可以將中間的值儲存起來，就能在其他區塊做使用。-->    <!--name="變數名稱"-->
+         你要 <set name = "items"> <star index = "1"/> </set>  個   <set name = "meat"> <star index = "2"/></set>。<!--你要  3  個  漢堡。-->
+      </template>
+    </category>
+
+    <category>
+      <pattern>結帳</pattern>
+      <template>
+          好的，購買的是<get name = "meat"/>，<get name = "items"/>個。<!--好的，購買的是 漢堡， 3 個。-->
+      </template>
+    </category>
+</aiml>

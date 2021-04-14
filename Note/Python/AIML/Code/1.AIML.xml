@@ -1,0 +1,24 @@
+<aiml version="1.0.1" encoding="UTF-8"> <!--定義為AIML文件-->
+    <!-- 這是註解-->
+
+    <!--category標籤代表一個知識區塊，區塊內有KEY(收到的值)以及回傳值。-->
+    <category>
+      <pattern>你好</pattern> <!--此處放接收到的值-->
+      <template>    <!--回傳值-->
+          我很好。      <!--所以程式只要收到「你好」就會回傳「我很好」-->
+      </template>
+    </category>
+
+
+    <category>
+      <pattern>猜拳</pattern>
+      <template>
+            <random>    <!--隨機回傳以下LI標籤的任一個值-->
+                <li>剪刀</li>
+                <li>石頭</li>
+                <li>布</li>
+            </random>
+      </template>
+    </category>
+
+</aiml>
