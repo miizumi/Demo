@@ -1,0 +1,4 @@
+# Pyinstaller
+Pyinstaller函式庫可以把Py檔打包成exe檔，在不同的作業系統上使用，就會打包成不同作業系統的執行檔。
+
+Pyinstaller會將需要的PIP連同打包，給予使用者檔案時不需要另外安裝PIP的函式庫。
