@@ -12,8 +12,36 @@ add.gitignore
 
 Choose a license
 
+# GitHub Desktop
 
-推薦使用GitHub Desktop，圖形化介面，不用背指令。
+GitHub的圖形化介面，方便好用，不用背指令。
+![icon](./IMG/desktopIcon.png)<br/>
+(應用程式圖示)<br/>
+
+![desktop](./IMG/desktop.png)
+(程式介面)<br/>
+
+<br/>
+
+
+# 建立一個新的專案
+
+Repositories 代表的是放程式碼的倉庫，意旨代碼庫。
+
+新增一個代碼庫，用來放想做版本控制的專案或檔案。
+
+![new](./IMG/Github_new.png)
+
+
+接著會到建立的畫面。
+![new2](./IMG/github_newFull.png)
+
++ Repository name ：代碼庫名稱 
++ Description ：說明文字
++ Public ：公開
++ Private ：私人專案
++ Add a README file：
+&emsp;&emsp;&emsp; ㄅ ㄅ
 
 clone 可以複製自己的也可以複製別人的。
 
