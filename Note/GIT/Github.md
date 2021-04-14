@@ -41,7 +41,7 @@ Repositories 代表的是放程式碼的倉庫，意旨代碼庫。
 + Public ：公開
 + Private ：私人專案
 + Add a README file：
-&emsp;&emsp;&emsp; ㄅ ㄅ
+&emsp;&emsp;&emsp; 67678876789
 
 clone 可以複製自己的也可以複製別人的。
 
