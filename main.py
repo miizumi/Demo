@@ -3,7 +3,7 @@ def func1(apple):
     print (apple)
 
 func1("i fuck you")
-
+髒話少講一點
 def func2(cat,dog):
     print (cat + dog)
 
