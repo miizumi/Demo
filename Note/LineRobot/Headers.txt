@@ -1,0 +1,15 @@
+b'{
+    "events":[{
+        "type":"message",
+        "replyToken":"d7648fe895e24b9eb2deed13db39e05b",
+        "source":{"userId":"U92ef6c3dd0d32157a4deec1f56491f04",
+        "type":"user"
+        },
+    "timestamp":1618744556982,
+    "mode":"active",
+    "message":{
+        "type":"text",
+        "id":"13908464939700",
+        "text":"12345"}
+        }],
+        "destination":"U1ade2a6cbcd4991edb1337f4416cf0cc"}'
