@@ -21,3 +21,33 @@ This example demonstrates the use of the analogWrite() function in fading an LED
 ## 圖解：
 
 ![Schematic](./../IMG/fade_Schematic.png)
+
+## CODE
+
+```ino
+int led = 9;           // 設定LED腳位
+int brightness = 0;    // 存放目前亮度
+int fadeAmount = 5;    // 每次更改亮度的浮動值
+
+
+void setup() {
+  //設定腳位為輸出
+  pinMode(led, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // 對腳位進行亮度改變
+  analogWrite(led, brightness);
+
+  //每完成一個迴圈，做一次亮度更改
+  brightness = brightness + fadeAmount;
+
+  // 當亮度小於0或是達到255，就把浮動加上負數，超過最大就會變負數，減到0則又會變回正數。
+  if (brightness <= 0 || brightness >= 255) {
+    fadeAmount = -fadeAmount;
+  }
+  //延遲30毫秒
+  delay(30);
+}
+```
