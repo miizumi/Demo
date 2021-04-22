@@ -40,6 +40,15 @@ assert "No results found." not in driver.page_source
 
 #顯示搜尋出的東西
 print(driver.page_source)
+time.sleep(1)
+
+#上一頁。
+driver.back()
+time.sleep(1)
+
+#下一頁。
+driver.forward()
+
 #停滯五秒
 time.sleep(5)
 #關閉模擬器
