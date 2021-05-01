@@ -5,3 +5,20 @@
 ```arduino
 const int Red=9;
 ```
+
+## #define 在程式執行前設定
+也就是在程式執行之前宣告變數的意思
+
+舉例：宣告變數VALUE=ABC
+```ino
+#define VALUE ABC
+```
+
+## 轉型
+轉文字 String()
+
+舉例
+```ino
+float a=10.1
+String(a)
+```
