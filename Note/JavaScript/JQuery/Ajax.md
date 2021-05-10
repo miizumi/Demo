@@ -7,7 +7,7 @@ $.ajax({
   type: "GET",  //GET or POST
   dataType: "json", //接收的資料格式，可以有data、xml等其他
 
-  //回應成功時的操作
+  //回應成功時的操作，都不一定要寫，看需求
   success: function(Jdata) {
     //若要使用資料 Jdata['key']
     alert("SUCCESS!!!");
@@ -16,6 +16,10 @@ $.ajax({
   error: function() {
     alert("ERROR!!!");
   }
+
+  complete: function () {
+                        
+                    }
 });
 
 ```

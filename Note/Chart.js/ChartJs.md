@@ -19,3 +19,10 @@ canvas標籤可以放入圖表。
   <canvas id="myChart"></canvas>
 </div>
 ```
+
+
+## 曲線
+```JAVAscript
+options: {
+lineTension: 0.4 //曲線係數}
+```
