@@ -26,7 +26,7 @@ model.add(Dense(units=2,activation='softmax'))
 
 #編譯
 model.compile(optimizer='adam',
-              loss='sparse_categorical_crossentropy',
+              loss=tf.keras.losses.categorical_crossentropy,
               metrics=['accuracy'])
 
 #訓練
