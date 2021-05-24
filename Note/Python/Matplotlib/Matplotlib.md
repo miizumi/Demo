@@ -19,3 +19,22 @@ matplotlib畫圖的核心概念
 ```py
     import matplotlib.pyplot as plt
 ```
+
+## 替換中文字形
+Matplotlib在呈現中文字的時候會出現一堆框框，而且程式碼會出現一堆錯誤，雖然圖表還是會顯示，但總是覺得不太好看。
+
+加上這三行code就能輕鬆解決！
+
+```python
+from matplotlib.font_manager import FontProperties 
+plt.rcParams['font.sans-serif'] = ['SimSun'] # 替換sans-serif字型
+plt.rcParams['axes.unicode_minus'] = False  #解決座標軸負數的負號顯示問題
+```
+
+## 圖表設定
+
+旋轉座標標籤
+
+```python
+plt.xticks(rotation=30)
+```
