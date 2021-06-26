@@ -4,12 +4,10 @@ import numpy as np
 
 #先確認cascade文件位置，可以替換不同的訓練檔案，去測試出最好的結果。
 #臉部偵測
-#face_Cascade= cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_default.xml')
-face_Cascade= cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt.xml')
-#face_Cascade= cv2.CascadeClassifier('haarcascades/haarcascade_frontalface_alt2.xml')
+face_Cascade= cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 
 #眼睛偵測
-eye_cascade = cv2.CascadeClassifier('haarcascades/haarcascade_eye.xml')
+eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 
 #讀取圖片
 img = cv2.imread('izumi.jpg')
